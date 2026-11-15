@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>#HerInFrameNaNetflix | Campanha Oficial Brasil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #0d0b0a;
+      --bg-secondary: #161311;
+      --glass-bg: rgba(28, 24, 21, 0.72);
+      --glass-border: rgba(212, 175, 114, 0.22);
+      --accent-gold: #d4af72;
+      --accent-gold-hover: #e5c38b;
+      --netflix-red: #e50914;
+      --netflix-red-hover: #f6121d;
+      --text-main: #f5f0e8;
+      --text-muted: #b3a89a;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg-primary);
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(212, 175, 114, 0.08), transparent 40%),
+        radial-gradient(circle at 85% 80%, rgba(229, 9, 20, 0.08), transparent 45%);
+      color: var(--text-main);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+
+    /* Header / Badge */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2.5rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(212, 175, 114, 0.12);
+      border: 1px solid var(--glass-border);
+      color: var(--accent-gold);
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .status-pill {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      background: var(--glass-bg);
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    /* Hero Section */
+    .hero {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 2.5rem;
+      align-items: center;
+      margin-bottom: 3.5rem;
+    }
+
+    .thai-title {
+      font-size: 1rem;
+      color: var(--accent-gold);
+      letter-spacing: 0.14em;
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.8rem, 5vw, 4.2rem);
+      line-height: 1.05;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
+    .subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .cast-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.9rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .cast-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 12px;
+      padding: 0.85rem 1rem;
+      backdrop-filter: blur(12px);
+    }
+
+    .cast-role {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent-gold);
+      font-weight: 600;
+    }
+
+    .cast-name {
+      font-weight: 700;
+      font-size: 0.98rem;
+      color: #fff;
+      margin-top: 0.15rem;
+    }
+
+    .cast-char {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+    }
+
+    .cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      padding: 0.9rem 1.5rem;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-netflix {
+      background: var(--netflix-red);
+      color: #fff;
+      box-shadow: 0 8px 24px rgba(229, 9, 20, 0.35);
+    }
+
+    .btn-netflix:hover {
+      background: var(--netflix-red-hover);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: var(--glass-bg);
+      color: var(--text-main);
+      border: 1px solid var(--glass-border);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--accent-gold);
+      color: var(--accent-gold);
+    }
+
+    /* Poster Frame */
+    .poster-wrapper {
+      position: relative;
+      padding: 14px;
+      background: linear-gradient(145deg, #2b231a, #17130f);
+      border: 2px solid #8c6d3f;
+      border-radius: 14px;
+      box-shadow: 0 24px 50px rgba(0, 0, 0, 0.65);
+    }
+
+    .poster-inner {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      aspect-ratio: 2 / 3;
+      background: #1d1916;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .poster-inner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .poster-fallback {
+      padding: 2rem;
+      color: var(--accent-gold);
+    }
+
+    .poster-caption {
+      margin-top: 0.75rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Cards & Sections */
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      margin-bottom: 0.4rem;
+      color: #fff;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 16px;
+      padding: 1.75rem;
+      backdrop-filter: blur(14px);
+      margin-bottom: 2rem;
+    }
+
+    /* Steps Grid */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+    .step-box {
+      background: rgba(13, 11, 10, 0.55);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .step-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      margin-bottom: 0.4rem;
+    }
+
+    .step-box h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .step-box p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .copy-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #0d0b0a;
+      border: 1px dashed var(--accent-gold);
+      border-radius: 8px;
+      padding: 0.55rem 0.75rem;
+      font-size: 0.82rem;
+      color: #fff;
+      gap: 0.5rem;
+    }
+
+    .btn-small {
+      background: var(--accent-gold);
+      color: #120f0c;
+      border: none;
+      border-radius: 6px;
+      padding: 0.35rem 0.7rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .btn-small:hover {
+      background: var(--accent-gold-hover);
+    }
+
+    /* Goal Tracker */
+    .goal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 0.75rem;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .goal-count {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+    }
+
+    .progress-track {
+      width: 100%;
+      height: 14px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 999px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 34%;
+      background: linear-gradient(90deg, var(--accent-gold), var(--netflix-red));
+      border-radius: 999px;
+      transition: width 0.4s ease;
+    }
+
+    .milestones {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+    }
+
+    /* Tweets Grid */
+    .tweets-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+    .tweet-card {
+      background: rgba(13, 11, 10, 0.55);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 12px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .tweet-tag {
+      font-size: 0.75rem;
+      color: var(--accent-gold);
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .tweet-text {
+      font-size: 0.88rem;
+      color: var(--text-main);
+    }
+
+    .tweet-actions {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .tweet-actions .btn-small {
+      flex: 1;
+      text-align: center;
+      text-decoration: none;
+      padding: 0.5rem;
+    }
+
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+    }
+
+    .btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.16);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 860px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+      .poster-wrapper {
+        max-width: 340px;
+        margin: 0 auto;
+      }
+      .steps-grid,
+      .tweets-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="top-bar">
+      <span class="badge">Campanha Oficial de Fãs • Brasil</span>
+      <span class="status-pill">Já disponível na Netflix Tailândia desde Out/2026</span>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="thai-title">เธอในภาพนั้น • DRAMA ROMÂNTICO TAILANDÊS (2026)</div>
+        <h1>Her in Frame</h1>
+        <p class="subtitle">
+          Lançado nos cinemas em agosto de 2026 e no catálogo da Netflix Tailândia em outubro, o drama romântico estrelado por <strong>Thanapob Leeratanakachorn (Tor)</strong> e <strong>Lorena Schuett (Lalina)</strong> conquistou o público asiático com uma história sensível sobre memória, fotografia e reencontros. Agora é a nossa vez de trazê-lo para a <strong>Netflix Brasil</strong>.
+        </p>
+
+        <div class="cast-grid">
+          <div class="cast-card">
+            <div class="cast-role">Protagonista</div>
+            <div class="cast-name">Thanapob Leeratanakachorn (Tor)</div>
+            <div class="cast-char">como Tawan / Danai</div>
+          </div>
+          <div class="cast-card">
+            <div class="cast-role">Protagonista</div>
+            <div class="cast-name">Lorena Schuett (Lalina)</div>
+            <div class="cast-char">como Mint / Kamonwan</div>
+          </div>
+        </div>
+
+        <div class="cta-group">
+          <a href="https://help.netflix.com/pt/titlerequest" target="_blank" rel="noopener noreferrer" class="btn btn-netflix">
+            Pedir na Netflix Brasil Agora
+          </a>
+          <a href="#mutirao" class="btn btn-outline">
+            Participar do Mutirão no X
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div class="poster-wrapper">
+          <div class="poster-inner">
+            <img src="poster.jpg" alt="Pôster oficial do filme Her in Frame (เธอในภาพนั้น)" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+            <div class="poster-fallback" style="display: none;">
+              <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 700;">Her in Frame</p>
+              <p style="font-size: 0.9rem; color: #b3a89a; margin-top: 0.5rem;">Salve o pôster oficial como <strong>poster.jpg</strong> na mesma pasta deste arquivo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="poster-caption">Pôster Oficial • Her in Frame (เธอในภาพนั้น)</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">Como fazer o pedido oficial em 1 minuto</h2>
+      <p class="section-desc">A Netflix utiliza os registros do formulário oficial para medir demanda regional — especialmente para títulos que já estão licenciados na plataforma em outros países.</p>
+
+      <div class="steps-grid">
+        <div class="step-box">
+          <div>
+            <div class="step-num">01.</div>
+            <h3>Copie o título padronizado</h3>
+            <p>Usar o mesmo formato ajuda o sistema a agrupar todas as solicitações do Brasil em um único registro.</p>
+          </div>
+          <div class="copy-box">
+            <span id="official-title">Her in Frame (เธอในภาพนั้น) - Tor &amp; Lena Lalina</span>
+            <button class="btn-small" onclick="copyText('official-title', this)">Copiar</button>
+          </div>
+        </div>
+
+        <div class="step-box">
+          <div>
+            <div class="step-num">02.</div>
+            <h3>Envie na Central Netflix</h3>
+            <p>Acesse a página oficial de sugestão de títulos, cole o texto no campo de sugestão e clique em enviar.</p>
+          </div>
+          <a href="https://help.netflix.com/pt/titlerequest" target="_blank" rel="noopener noreferrer" class="btn-small" style="text-align: center; text-decoration: none; padding: 0.6rem;">
+            Abrir Formulário Oficial
+          </a>
+        </div>
+
+        <div class="step-box">
+          <div>
+            <div class="step-num">03.</div>
+            <h3>Registre sua participação</h3>
+            <p>Depois de enviar o formulário da Netflix, confirme aqui na meta coletiva e compartilhe no X marcando o perfil oficial.</p>
+          </div>
+          <button class="btn-small" style="padding: 0.6rem;" onclick="incrementGoal()">
+            Confirmar Meu Pedido
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="goal-header">
+        <div>
+          <h2 class="section-title">Meta Coletiva da Campanha</h2>
+          <p class="section-desc" style="margin-bottom: 0;">Cada clique abaixo representa um pedido enviado no formulário oficial da Netflix Brasil.</p>
+        </div>
+        <div class="goal-count"><span id="counter-value">512</span> / 1.500</div>
+      </div>
+
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-bar"></div>
+      </div>
+
+      <div class="milestones">
+        <span>Marco 1: 500 pedidos (Concluído)</span>
+        <span>Marco 2: 1.500 pedidos</span>
+        <span>Marco 3: 3.000 pedidos</span>
+      </div>
+
+      <button id="confirm-btn" class="btn btn-netflix" onclick="incrementGoal()">
+        Eu já enviei meu pedido na Netflix!
+      </button>
+    </section>
+
+    <section class="card" id="mutirao">
+      <h2 class="section-title">Central de Mutirão no X (Twitter)</h2>
+      <p class="section-desc">Escolha um modelo pronto, anexe o pôster oficial do filme e publique mencionando a <strong>@NetflixBrasil</strong>.</p>
+
+      <div class="tweets-grid">
+        <div class="tweet-card">
+          <div>
+            <div class="tweet-tag">Opção 1 • Argumento de Catálogo</div>
+            <p class="tweet-text" id="tweet-1">Oi @NetflixBrasil! O filme tailandês Her in Frame (เธอในภาพนั้น), com Tor Thanapob e Lena Lalina, já está disponível na Netflix Tailândia desde outubro. Traz legendas em português para o Brasil também! #HerInFrameNaNetflix</p>
+          </div>
+          <div class="tweet-actions">
+            <button class="btn-small btn-ghost" onclick="copyText('tweet-1', this)">Copiar</button>
+            <a class="btn-small" target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?text=Oi%20%40NetflixBrasil!%20O%20filme%20tailand%C3%AAs%20Her%20in%20Frame%20(%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B9%83%E0%B8%99%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%99%E0%B8%B1%E0%B9%89%E0%B8%99)%2C%20com%20Tor%20Thanapob%20e%20Lena%20Lalina%2C%20j%C3%A1%20est%C3%A1%20dispon%C3%ADvel%20na%20Netflix%20Tail%C3%A2ndia%20desde%20outubro.%20Traz%20legendas%20em%20portugu%C3%AAs%20para%20o%20Brasil%20tamb%C3%A9m!%20%23HerInFrameNaNetflix">Postar no X</a>
+          </div>
+        </div>
+
+        <div class="tweet-card">
+          <div>
+            <div class="tweet-tag">Opção 2 • Foco no Elenco</div>
+            <p class="tweet-text" id="tweet-2">Queremos assistir Tor Thanapob (Tawan) e Lorena Schuett / Lena Lalina (Mint) em Her in Frame no catálogo da @NetflixBrasil! Já fiz meu pedido no formulário oficial e o público brasileiro está pronto para dar audiência. #HerInFrameNaNetflix</p>
+          </div>
+          <div class="tweet-actions">
+            <button class="btn-small btn-ghost" onclick="copyText('tweet-2', this)">Copiar</button>
+            <a class="btn-small" target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?text=Queremos%20assistir%20Tor%20Thanapob%20(Tawan)%20e%20Lorena%20Schuett%20%2F%20Lena%20Lalina%20(Mint)%20em%20Her%20in%20Frame%20no%20cat%C3%A1logo%20da%20%40NetflixBrasil!%20J%C3%A1%20fiz%20meu%20pedido%20no%20formul%C3%A1rio%20oficial%20e%20o%20p%C3%BAblico%20brasileiro%20est%C3%A1%20pronto%20para%20dar%20audi%C3%AAncia.%20%23HerInFrameNaNetflix">Postar no X</a>
+          </div>
+        </div>
+
+        <div class="tweet-card">
+          <div>
+            <div class="tweet-tag">Opção 3 • Convite para Fãs</div>
+            <p class="tweet-text" id="tweet-3">Bora trazer Her in Frame (เธอในภาพนั้น) para a @NetflixBrasil! O filme estreou nos cinemas em agosto de 2026 e já está na Netflix Tailândia. Peça no help.netflix.com/pt/titlerequest e suba a tag #HerInFrameNaNetflix!</p>
+          </div>
+          <div class="tweet-actions">
+            <button class="btn-small btn-ghost" onclick="copyText('tweet-3', this)">Copiar</button>
+            <a class="btn-small" target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?text=Bora%20trazer%20Her%20in%20Frame%20(%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B9%83%E0%B8%99%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%99%E0%B8%B1%E0%B9%89%E0%B8%99)%20para%20a%20%40NetflixBrasil!%20O%20filme%20estreou%20nos%20cinemas%20em%20agosto%20de%202026%20e%20j%C3%A1%20est%C3%A1%20na%20Netflix%20Tail%C3%A2ndia.%20Pe%C3%A7a%20no%20help.netflix.com%2Fpt%2Ftitlerequest%20e%20suba%20a%20tag%20%23HerInFrameNaNetflix!">Postar no X</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Projeto independente organizado por fãs brasileiros • #HerInFrameNaNetflix
+    </footer>
+  </div>
+
+  <script>
+    const GOAL_TARGET = 1500;
+    const BASE_COUNT = 512;
+
+    function loadCounter() {
+      const saved = parseInt(localStorage.getItem('her_in_frame_count') || BASE_COUNT, 10);
+      const voted = localStorage.getItem('her_in_frame_voted') === 'true';
+      updateUI(saved, voted);
+    }
+
+    function updateUI(count, voted) {
+      document.getElementById('counter-value').textContent = count.toLocaleString('pt-BR');
+      const pct = Math.min((count / GOAL_TARGET) * 100, 100);
+      document.getElementById('progress-bar').style.width = pct + '%';
+
+      if (voted) {
+        const btn = document.getElementById('confirm-btn');
+        btn.textContent = 'Pedido registrado! Compartilhe com mais fãs';
+        btn.style.background = '#2e7d32';
+      }
+    }
+
+    function incrementGoal() {
+      const voted = localStorage.getItem('her_in_frame_voted') === 'true';
+      let current = parseInt(localStorage.getItem('her_in_frame_count') || BASE_COUNT, 10);
+      if (!voted) {
+        current += 1;
+        localStorage.setItem('her_in_frame_count', current);
+        localStorage.setItem('her_in_frame_voted', 'true');
+      }
+      updateUI(current, true);
+    }
+
+    function copyText(elementId, buttonEl) {
+      const text = document.getElementById(elementId).textContent.trim();
+      navigator.clipboard.writeText(text).then(() => {
+        const original = buttonEl.textContent;
+        buttonEl.textContent = 'Copiado!';
+        setTimeout(() => {
+          buttonEl.textContent = original;
+        }, 1800);
+      });
+    }
+
+    loadCounter();
+  </script>
+</body>
+</html>
