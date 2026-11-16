@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>#HerInFrameNaNetflix | Campanha Oficial Brasil</title>
+  <title>#QueremosHerInFrameNaNetflixBrasil | Campanha Oficial</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -417,6 +417,18 @@
       margin-top: 2rem;
     }
 
+    .footer-link {
+      color: var(--accent-gold);
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+    }
+
+    .footer-link:hover {
+      opacity: 0.8;
+      text-decoration: underline;
+    }
+
     @media (max-width: 860px) {
       .hero {
         grid-template-columns: 1fr;
@@ -436,27 +448,27 @@
   <div class="container">
     <header class="top-bar">
       <span class="badge">Campanha Oficial de Fãs • Brasil</span>
-      <span class="status-pill">Já disponível na Netflix Tailândia desde Out/2026</span>
+      <span class="status-pill">Disponível na Netflix Tailândia</span>
     </header>
 
     <section class="hero">
       <div>
-        <div class="thai-title">เธอในภาพนั้น • DRAMA ROMÂNTICO TAILANDÊS (2026)</div>
+        <div class="thai-title">เธอในภาพนั้น • DRAMA ROMÂNTICO TAILANDÊS</div>
         <h1>Her in Frame</h1>
         <p class="subtitle">
-          Lançado nos cinemas em agosto de 2026 e no catálogo da Netflix Tailândia em outubro, o drama romântico estrelado por <strong>Thanapob Leeratanakachorn (Tor)</strong> e <strong>Lorena Schuett (Lalina)</strong> conquistou o público asiático com uma história sensível sobre memória, fotografia e reencontros. Agora é a nossa vez de trazê-lo para a <strong>Netflix Brasil</strong>.
+          Lançado diretamente no catálogo da <strong>Netflix Tailândia</strong>, o drama romântico estrelado por <strong>Lorena Lalina Schuett</strong> (Mint / Kamonwan) e <strong>Thanapob Leeratanakachorn (Tor)</strong> (Tawan / Danai) acompanha como fotografias antigas e lembranças guardadas trazem à tona um amor que resistiu ao tempo, unindo passado e presente em uma jornada emocionante sobre memória e reencontros. Agora é a nossa vez de trazê-lo para a <strong>Netflix Brasil</strong>.
         </p>
 
         <div class="cast-grid">
           <div class="cast-card">
             <div class="cast-role">Protagonista</div>
-            <div class="cast-name">Thanapob Leeratanakachorn (Tor)</div>
-            <div class="cast-char">como Tawan / Danai</div>
+            <div class="cast-name">Lorena Lalina Schuett</div>
+            <div class="cast-char">como Mint / Kamonwan</div>
           </div>
           <div class="cast-card">
             <div class="cast-role">Protagonista</div>
-            <div class="cast-name">Lorena Schuett (Lalina)</div>
-            <div class="cast-char">como Mint / Kamonwan</div>
+            <div class="cast-name">Thanapob Leeratanakachorn (Tor)</div>
+            <div class="cast-char">como Tawan / Danai</div>
           </div>
         </div>
 
@@ -496,7 +508,7 @@
             <p>Usar o mesmo formato ajuda o sistema a agrupar todas as solicitações do Brasil em um único registro.</p>
           </div>
           <div class="copy-box">
-            <span id="official-title">Her in Frame (เธอในภาพนั้น) - Tor &amp; Lena Lalina</span>
+            <span id="official-title">Her in Frame (เธอในภาพนั้น) - Lorena Lalina Schuett &amp; Tor</span>
             <button class="btn-small" onclick="copyText('official-title', this)">Copiar</button>
           </div>
         </div>
@@ -557,40 +569,42 @@
         <div class="tweet-card">
           <div>
             <div class="tweet-tag">Opção 1 • Argumento de Catálogo</div>
-            <p class="tweet-text" id="tweet-1">Oi @NetflixBrasil! O filme tailandês Her in Frame (เธอในภาพนั้น), com Tor Thanapob e Lena Lalina, já está disponível na Netflix Tailândia desde outubro. Traz legendas em português para o Brasil também! #HerInFrameNaNetflix</p>
+            <p class="tweet-text" id="tweet-1">Oi @NetflixBrasil! O filme tailandês Her in Frame (เธอในภาพนั้น), estrelado por Lorena Lalina Schuett e Tor Thanapob, já está disponível na Netflix Tailândia. Queremos muito que ele chegue ao catálogo brasileiro com legendas em português! #QueremosHerInFrameNaNetflixBrasil</p>
           </div>
           <div class="tweet-actions">
             <button class="btn-small btn-ghost" onclick="copyText('tweet-1', this)">Copiar</button>
-            <a class="btn-small" target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?text=Oi%20%40NetflixBrasil!%20O%20filme%20tailand%C3%AAs%20Her%20in%20Frame%20(%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B9%83%E0%B8%99%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%99%E0%B8%B1%E0%B9%89%E0%B8%99)%2C%20com%20Tor%20Thanapob%20e%20Lena%20Lalina%2C%20j%C3%A1%20est%C3%A1%20dispon%C3%ADvel%20na%20Netflix%20Tail%C3%A2ndia%20desde%20outubro.%20Traz%20legendas%20em%20portugu%C3%AAs%20para%20o%20Brasil%20tamb%C3%A9m!%20%23HerInFrameNaNetflix">Postar no X</a>
+            <a class="btn-small" target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?text=Oi%20%40NetflixBrasil!%20O%20filme%20tailand%C3%AAs%20Her%20in%20Frame%20(%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B9%83%E0%B8%99%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%99%E0%B8%B1%E0%B9%89%E0%B8%99)%2C%20estrelado%20por%20Lorena%20Lalina%20Schuett%20e%20Tor%20Thanapob%2C%20j%C3%A1%20est%C3%A1%20dispon%C3%ADvel%20na%20Netflix%20Tail%C3%A2ndia.%20Queremos%20muito%20que%20ele%20chegue%20ao%20cat%C3%A1logo%20brasileiro%20com%20legendas%20em%20portugu%C3%AAs!%20%23QueremosHerInFrameNaNetflixBrasil">Postar no X</a>
           </div>
         </div>
 
         <div class="tweet-card">
           <div>
             <div class="tweet-tag">Opção 2 • Foco no Elenco</div>
-            <p class="tweet-text" id="tweet-2">Queremos assistir Tor Thanapob (Tawan) e Lorena Schuett / Lena Lalina (Mint) em Her in Frame no catálogo da @NetflixBrasil! Já fiz meu pedido no formulário oficial e o público brasileiro está pronto para dar audiência. #HerInFrameNaNetflix</p>
+            <p class="tweet-text" id="tweet-2">Queremos assistir Lorena Lalina Schuett (Mint) e Tor Thanapob (Tawan) em Her in Frame no catálogo da @NetflixBrasil! O filme já faz sucesso na Netflix Tailândia e o público brasileiro está pronto para dar audiência. #QueremosHerInFrameNaNetflixBrasil</p>
           </div>
           <div class="tweet-actions">
             <button class="btn-small btn-ghost" onclick="copyText('tweet-2', this)">Copiar</button>
-            <a class="btn-small" target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?text=Queremos%20assistir%20Tor%20Thanapob%20(Tawan)%20e%20Lorena%20Schuett%20%2F%20Lena%20Lalina%20(Mint)%20em%20Her%20in%20Frame%20no%20cat%C3%A1logo%20da%20%40NetflixBrasil!%20J%C3%A1%20fiz%20meu%20pedido%20no%20formul%C3%A1rio%20oficial%20e%20o%20p%C3%BAblico%20brasileiro%20est%C3%A1%20pronto%20para%20dar%20audi%C3%AAncia.%20%23HerInFrameNaNetflix">Postar no X</a>
+            <a class="btn-small" target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?text=Queremos%20assistir%20Lorena%20Lalina%20Schuett%20(Mint)%20e%20Tor%20Thanapob%20(Tawan)%20em%20Her%20in%20Frame%20no%20cat%C3%A1logo%20da%20%40NetflixBrasil!%20O%20filme%20j%C3%A1%20faz%20sucesso%20na%20Netflix%20Tail%C3%A2ndia%20e%20o%20p%C3%BAblico%20brasileiro%20est%C3%A1%20pronto%20para%20dar%20audi%C3%AAncia.%20%23QueremosHerInFrameNaNetflixBrasil">Postar no X</a>
           </div>
         </div>
 
         <div class="tweet-card">
           <div>
             <div class="tweet-tag">Opção 3 • Convite para Fãs</div>
-            <p class="tweet-text" id="tweet-3">Bora trazer Her in Frame (เธอในภาพนั้น) para a @NetflixBrasil! O filme estreou nos cinemas em agosto de 2026 e já está na Netflix Tailândia. Peça no help.netflix.com/pt/titlerequest e suba a tag #HerInFrameNaNetflix!</p>
+            <p class="tweet-text" id="tweet-3">Pedimos a chegada do filme Her in Frame (เธอในภาพนั้น) à @NetflixBrasil! Como a produção já está no catálogo da Netflix Tailândia, seria incrível vê-la disponível no Brasil. Acesse help.netflix.com/pt/titlerequest e participe! #QueremosHerInFrameNaNetflixBrasil</p>
           </div>
           <div class="tweet-actions">
             <button class="btn-small btn-ghost" onclick="copyText('tweet-3', this)">Copiar</button>
-            <a class="btn-small" target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?text=Bora%20trazer%20Her%20in%20Frame%20(%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B9%83%E0%B8%99%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%99%E0%B8%B1%E0%B9%89%E0%B8%99)%20para%20a%20%40NetflixBrasil!%20O%20filme%20estreou%20nos%20cinemas%20em%20agosto%20de%202026%20e%20j%C3%A1%20est%C3%A1%20na%20Netflix%20Tail%C3%A2ndia.%20Pe%C3%A7a%20no%20help.netflix.com%2Fpt%2Ftitlerequest%20e%20suba%20a%20tag%20%23HerInFrameNaNetflix!">Postar no X</a>
+            <a class="btn-small" target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?text=Pedimos%20a%20chegada%20do%20filme%20Her%20in%20Frame%20(%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B9%83%E0%B8%99%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%99%E0%B8%B1%E0%B9%89%E0%B8%99)%20%C3%A0%20%40NetflixBrasil!%20Como%20a%20produ%C3%A7%C3%A3o%20j%C3%A1%20est%C3%A1%20no%20cat%C3%A1logo%20da%20Netflix%20Tail%C3%A2ndia%2C%20seria%20incr%C3%ADvel%20v%C3%AA-la%20dispon%C3%ADvel%20no%20Brasil.%20Acesse%20help.netflix.com%2Fpt%2Ftitlerequest%20e%20participe!%20%23QueremosHerInFrameNaNetflixBrasil">Postar no X</a>
           </div>
         </div>
       </div>
     </section>
 
     <footer>
-      Projeto independente organizado por fãs brasileiros • #HerInFrameNaNetflix
+      Projeto independente organizado por fãs brasileiros • 
+      <a href="https://twitter.com/SEU_USER" target="_blank" rel="noopener noreferrer" class="footer-link">@SEU_USER</a> 
+      • #QueremosHerInFrameNaNetflixBrasil
     </footer>
   </div>
 
