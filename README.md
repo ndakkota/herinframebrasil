@@ -19,4 +19,4 @@ Página da campanha independente de fãs brasileiros para solicitar a chegada do
 * **Formulário oficial da Netflix:** https://help.netflix.com/pt/titlerequest
 
 ---
-Projeto independente organizado por fãs brasileiros • `@lifedelbs`
+Projeto independente organizado por fãs brasileiros • `@lifedelbs` `@surto_safico` `@egualeka` `@umbraverse_`
